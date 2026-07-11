@@ -9,7 +9,7 @@ import mediapipe as mp
 import numpy as np
 from typing import Tuple, Optional
 from collections import deque
-cv2.startWindowThread()
+cv2.startWindowThread() 
 
 
 class GestureController:

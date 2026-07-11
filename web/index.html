@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nokia Snake - Gesture Control</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>NOKIA SNAKE - GESTURE CONTROL</h1>
+  <p id="status">Loading hand tracking model...</p>
+
+  <div class="container">
+    <canvas id="game-canvas" width="600" height="600"></canvas>
+    <canvas id="camera-canvas" width="640" height="480"></canvas>
+  </div>
+
+  <!-- hidden video, frames get drawn on the canvas -->
+  <video id="webcam" autoplay playsinline muted></video>
+
+  <div class="rules">
+    <h2>Rules</h2>
+    <ul>
+      <li>Allow camera access</li>
+      <li>Show an open palm to start / restart</li>
+      <li>Move your index finger up / down / left / right to move the snake</li>
+      <li>Eat the fruit, dont bite yourself. Walls wrap around</li>
+      <li>No camera? Arrow keys work too</li>
+    </ul>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
