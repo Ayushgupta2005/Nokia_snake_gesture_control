@@ -94,7 +94,6 @@ class GameManager:
                         self.running = False
             
             # Apply gesture controls
-            if self.current_gesture:
                 self.game.change_direction(self.current_gesture)
                 if self.game.game_over:
                     self.game.handle_restart(self.current_gesture)
